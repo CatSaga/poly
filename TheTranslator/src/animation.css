@@ -1,0 +1,31 @@
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (hover: hover) and (min-width: 700px){
+.animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
+    }
+    
+.animated-title {font-size:60px; font-weight:600; position: relative; width: 100%;max-width:100%; height: auto; padding:80px 0; overflow-x: hidden; overflow-y: hidden; display: flex; align-items: flex-start;}
+.track {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 60s linear infinite;}
+
+ .animated-title-2 {font-size:80px; font-weight:900; position: relative; width: 100%;max-width:100%; height: auto; padding:80px 0; overflow-x: hidden; overflow-y: hidden; display: flex; align-items: center;}
+ .track-2 {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 30s linear infinite; }
+
+ .animated-title-3 {font-size:50px; font-weight:600; position: relative; width: 100%;max-width:100%; height: auto; padding:80px 0; overflow-x: hidden; overflow-y: hidden; display: flex; align-items: center;}
+ .track-3 {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 50s linear infinite; }
+
+ .animated-title-4 {font-size:70px; font-weight:600; position: relative; width: 100%;max-width:100%; height: auto; padding:80px 0; overflow-x: hidden; overflow-y: hidden; display: flex; align-items: center;}
+ .track-4 {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 40s linear infinite; }
+
+.font-color{
+  opacity: 0.4;
+}
+
+.animated-background{
+  width: 100vw;
+  height: 100vh;
+  background-color: #777777;
+  overflow: hidden;
+  z-index: -9999999;
+}
